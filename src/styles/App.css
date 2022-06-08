@@ -1,7 +1,6 @@
 .App {
   height: 100vh;
   position: relative;
-  margin: 0 4rem;
   text-align: center;
 }
 
@@ -10,17 +9,18 @@
   height: 64px;
   width: 64px;
   position: absolute;
-  left: 0;
+  left: 2rem;
   top: 1.5rem;
 }
 
 .message {
+  max-width: 720px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 20%;
+  margin: 0 auto;
 }
 
 .subtitle {
@@ -41,10 +41,11 @@
 }
 
 .underline:hover {
-  text-decoration: wavy underline green;
+  text-decoration: wavy underline #faa;
 }
 
 .button-gh {
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +67,7 @@
 
 .button-gh > svg {
   fill: white;
-  margin: 0 8px;
+  margin: 0 4px 0 8px;
 }
 
 .footer {
@@ -77,6 +78,27 @@
   left: 0;
   bottom: 0;
   padding: 0 2rem;
+}
+
+.custom-shape-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 120px;
+}
+
+.custom-shape-divider .shape-fill {
+  fill: #0066ff;
 }
 
 /* Animation */
