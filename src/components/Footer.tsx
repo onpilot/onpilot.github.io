@@ -1,24 +1,44 @@
 import React from 'react';
+import sx from './modules/Footer.module.css';
+import { links, mail } from './data/social';
+
+type Props = {
+  classname: string;
+};
+
+const Copyright = ({ classname }: Props) => {
+  const year = new Date().getFullYear();
+  const text = '© ' + year + ' Idan Abdillah';
+  return <p className={classname}>{text}</p>;
+};
 
 const Footer = () => {
   return (
-    <>
-      <p>Interested in working together? I'd love to hear from you.</p>
-      <div>
-        <ul>
-          <li>
-            <a href=''>github</a>
-          </li>
-          <li>
-            <a href=''>twitter</a>
-          </li>
-          <li>
-            <a href=''>linkedin</a>
-          </li>
-        </ul>
+    <footer className={sx.container}>
+      <div className={sx.inner_container}>
+        <p>Interested in working together? I'd love to hear from you.</p>
+        <div className={sx.ic_wrapper}>
+          <ul>
+            {links.map((e) => (
+              <li key={e.name}>
+                <a
+                  className={sx.ic}
+                  href={e.url}
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  {e.ic}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className={sx.mail}>
+          <p className={sx.mail_text}>{mail}</p>
+        </div>
+        <Copyright classname={sx.copy} />
       </div>
-      <p>(C) 2022 Idan Abdillah</p>
-    </>
+    </footer>
   );
 };
 

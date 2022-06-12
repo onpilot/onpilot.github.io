@@ -1,0 +1,39 @@
+.container {
+  height: 80px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.nav_menu {
+  margin-left: 30px;
+}
+
+.nav_menu__list {
+  margin-right: 10px;
+}
+
+.menu_right {
+  position: absolute;
+  right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ic_group {
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ic_group button {
+  cursor: pointer;
+  margin-left: 20px;
+}
