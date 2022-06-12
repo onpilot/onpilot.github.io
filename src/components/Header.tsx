@@ -17,9 +17,9 @@ const Header = () => {
         <Logo />
       </a>
       <nav>
-        <ul className={sx.nav_menu}>
+        <ul className={sx.menu}>
           {page.map((e) => (
-            <li className={sx.nav_menu__list} key={e.name}>
+            <li className={sx.menu_list} key={e.name}>
               <a href={e.url}>{e.name}</a>
             </li>
           ))}
@@ -27,7 +27,7 @@ const Header = () => {
       </nav>
       <div className={sx.menu_right}>
         <ButtonLink href=''>Merch</ButtonLink>
-        <div className={sx.ic_group}>
+        <div className={`ic-wrapper ${sx.ic_btn}`}>
           <button>
             <Moon />
           </button>

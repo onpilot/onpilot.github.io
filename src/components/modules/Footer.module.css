@@ -13,7 +13,7 @@
   padding: 0 40px 60px 40px;
 }
 
-.ic_wrapper {
+.links_wrapper {
   height: 32px;
   margin-top: 25px;
   margin-bottom: 15px;
@@ -21,11 +21,6 @@
 
 .ic {
   margin: 0 4px;
-}
-
-.ic svg {
-  height: 32px;
-  width: 32px;
 }
 
 .mail {

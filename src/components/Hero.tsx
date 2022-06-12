@@ -9,7 +9,7 @@ const Hero = () => {
       <p className={sx.subtitle}>
         Frontend Developer / Self-taught designer / React.js Enthusiast
       </p>
-      <div className={sx.ic_wrapper}>
+      <div className={`ic-wrapper ic-lg ${sx.run}`}>
         <PlayCircle />
       </div>
       <div className={sx.display_wrapper}>

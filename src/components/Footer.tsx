@@ -17,12 +17,12 @@ const Footer = () => {
     <footer className={sx.container}>
       <div className={sx.inner_container}>
         <p>Interested in working together? I'd love to hear from you.</p>
-        <div className={sx.ic_wrapper}>
+        <div className={sx.links_wrapper}>
           <ul>
             {links.map((e) => (
               <li key={e.name}>
                 <a
-                  className={sx.ic}
+                  className={`ic-md ${sx.ic}`}
                   href={e.url}
                   target='_blank'
                   rel='noreferrer'

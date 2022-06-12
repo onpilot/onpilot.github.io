@@ -23,3 +23,22 @@ h1 {
 p {
   font-size: 20px;
 }
+
+/* Icon */
+.ic-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ic-lg svg {
+  height: 40px;
+}
+
+.ic-md svg {
+  height: 32px;
+}
+
+.ic-sm svg {
+  height: 24px;
+}

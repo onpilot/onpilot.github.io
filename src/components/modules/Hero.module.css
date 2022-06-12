@@ -16,16 +16,8 @@
   margin-bottom: 10px;
 }
 
-.ic_wrapper {
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.run {
   margin-top: 25px;
-}
-
-.ic_wrapper svg {
-  height: 40px;
 }
 
 .display_wrapper {

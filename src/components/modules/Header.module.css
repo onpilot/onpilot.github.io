@@ -10,11 +10,11 @@
   height: 32px;
 }
 
-.nav_menu {
+.menu {
   margin-left: 30px;
 }
 
-.nav_menu__list {
+.menu_list {
   margin-right: 10px;
 }
 
@@ -26,14 +26,7 @@
   align-items: center;
 }
 
-.ic_group {
-  height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.ic_group button {
+.ic_btn button {
   cursor: pointer;
   margin-left: 20px;
 }
