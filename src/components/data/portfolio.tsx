@@ -22,7 +22,7 @@ export const portfolio = [
     title: 'Web Design & Development',
     tag: 'website, landing-page',
     ic: ic_1,
-    url: '',
+    url: { code: '', live: '' },
     bgImg: 'var(--grad1)',
   },
   {
@@ -30,7 +30,10 @@ export const portfolio = [
     title: 'React Dictionary',
     tag: 'freedictionary-api, rest, mui, dark-mode',
     ic: ic_2,
-    url: '',
+    url: {
+      code: 'https://github.com/onpilot/react-dictionary-mui',
+      live: 'https://onpilot.github.io/react-dictionary-mui',
+    },
     bgImg: 'var(--grad2)',
   },
   {
@@ -38,7 +41,10 @@ export const portfolio = [
     title: '25 + 5 Clock',
     tag: 'pomodoro, cra, styled-components, ui, ux',
     ic: ic_3,
-    url: '',
+    url: {
+      code: 'https://github.com/onpilot/js-pomodoro',
+      live: 'https://onpilot.github.io/js-pomodoro/',
+    },
     bgImg: 'var(--grad3)',
   },
   {
@@ -46,7 +52,10 @@ export const portfolio = [
     title: 'Calculator',
     tag: 'cra, styled-components, ui, ux',
     ic: ic_4,
-    url: '',
+    url: {
+      code: 'https://github.com/onpilot/js-calculator',
+      live: 'https://onpilot.github.io/js-calculator/',
+    },
     bgImg: 'var(--grad4)',
   },
   {
@@ -54,7 +63,10 @@ export const portfolio = [
     title: 'Markdown Previewer',
     tag: 'html-to-markdown, marked.js, dom-purify',
     ic: ic_5,
-    url: '',
+    url: {
+      code: 'https://github.com/onpilot/markdown-previewer',
+      live: 'https://onpilot.github.io/markdown-previewer/',
+    },
     bgImg: 'var(--grad5)',
   },
   {
@@ -62,7 +74,10 @@ export const portfolio = [
     title: 'Lofi Music Machine',
     tag: 'keyboard-events, jsdelivr, gh-repo-to-cdn',
     ic: ic_6,
-    url: '',
+    url: {
+      code: 'https://github.com/onpilot/lofi-music-machine',
+      live: 'https://onpilot.github.io/lofi-music-machine/',
+    },
     bgImg: 'var(--grad6)',
   },
 ];

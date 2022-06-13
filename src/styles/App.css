@@ -53,6 +53,11 @@ li a {
   fill: var(--grey);
 }
 
+/* toggle hidden */
+.hidden {
+  display: none !important;
+}
+
 /* Large screens ----------- */
 @media (min-width: 1400px) {
   body {

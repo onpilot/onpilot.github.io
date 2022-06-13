@@ -48,8 +48,17 @@
 }
 
 .box__title,
-.box__tag {
+.box__tag,
+.box__button_group {
   z-index: 1;
+}
+
+.box__button_group {
+  display: flex;
+}
+
+.box__button_group > * {
+  margin: 12px 4px 0 4px;
 }
 
 .box__icon {
