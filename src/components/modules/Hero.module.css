@@ -29,14 +29,38 @@
 .display_text {
   position: absolute;
   top: 40px;
-  height: 200px;
-  font-size: 200px;
+  left: -12px;
+  width: calc(100% - 40px);
+  height: 240px;
+  font-size: 240px;
   line-height: 1;
   font-weight: bold;
-  word-break: break-all;
+  letter-spacing: -8px;
   text-overflow: clip;
   overflow: hidden;
-  user-select: none;
-  z-index: -1;
+  white-space: nowrap;
   margin-left: 40px;
+}
+
+.display_quotes {
+  position: absolute;
+  top: -100px;
+  width: 240px;
+  margin-left: 40px;
+}
+
+.quote {
+  margin-top: 8px;
+}
+
+.quote p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.quote small {
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
 }

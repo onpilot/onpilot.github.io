@@ -23,6 +23,12 @@ h1 {
 p {
   font-size: 20px;
 }
+small {
+  font-size: 14px;
+}
+li a {
+  color: var(--black);
+}
 
 /* Icon */
 .ic-wrapper {
@@ -41,4 +47,8 @@ p {
 
 .ic-sm svg {
   height: 24px;
+}
+
+.ic-wrapper svg:hover {
+  fill: var(--grey);
 }

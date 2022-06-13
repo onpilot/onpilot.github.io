@@ -1,4 +1,5 @@
 .container {
+  position: relative;
   height: 280px;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,7 @@
   padding: 0 40px 60px 40px;
 }
 
-.links_wrapper {
+.links {
   height: 32px;
   margin-top: 25px;
   margin-bottom: 15px;

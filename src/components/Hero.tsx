@@ -1,6 +1,6 @@
 import React from 'react';
 import sx from './modules/Hero.module.css';
-import { PlayCircle } from './elements/Icons';
+import { PlayCircle, DoubleQuoteR } from './elements/Icons';
 
 const Hero = () => {
   return (
@@ -12,8 +12,21 @@ const Hero = () => {
       <div className={`ic-wrapper ic-lg ${sx.run}`}>
         <PlayCircle />
       </div>
+
       <div className={sx.display_wrapper}>
-        <span className={sx.display_text}>Hello World</span>
+        <div className={sx.display_quotes}>
+          <div className='ic-sm'>
+            <DoubleQuoteR />
+          </div>
+          <div className={sx.quote}>
+            <p>Quotes of the day</p>
+            <small>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis veniam nisi, recusandae dolorem at expedita quo.
+            </small>
+          </div>
+        </div>
+        <p className={sx.display_text}>Hello World</p>
       </div>
     </section>
   );

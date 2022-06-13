@@ -18,9 +18,9 @@ const Header = () => {
       </a>
       <nav>
         <ul className={sx.menu}>
-          {page.map((e) => (
-            <li className={sx.menu_list} key={e.name}>
-              <a href={e.url}>{e.name}</a>
+          {page.map(({ name, url }) => (
+            <li className={sx.menu_list} key={name}>
+              <a href={url}>{name}</a>
             </li>
           ))}
         </ul>
@@ -28,10 +28,10 @@ const Header = () => {
       <div className={sx.menu_right}>
         <ButtonLink href=''>Merch</ButtonLink>
         <div className={`ic-wrapper ${sx.ic_btn}`}>
-          <button>
+          <button className='ic-sm'>
             <Moon />
           </button>
-          <button>
+          <button className='ic-sm'>
             <MenuRightAlt />
           </button>
         </div>

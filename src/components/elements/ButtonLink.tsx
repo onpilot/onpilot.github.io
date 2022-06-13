@@ -7,17 +7,25 @@ type Props = {
 };
 
 const StyledButton = styled.a`
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 120px;
   height: 32px;
   font-size: 14px;
   line-height: 1;
   text-align: center;
   text-decoration: none;
-  background-color: var(--grey);
+  color: var(--black);
+  border: 2px solid var(--black);
   border-radius: 9999px;
-  padding: 9px 0;
-  margin: 0;
+
+  &:hover {
+    border: none;
+    background-color: var(--red);
+    background-image: var(--strong-bliss);
+    color: white;
+  }
 `;
 
 export const ButtonLink = ({ href, children }: Props) => {

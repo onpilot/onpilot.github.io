@@ -1,6 +1,18 @@
 :root {
-  --black: #000000;
+  --black: #18191a;
   --grey: #d9d9d9;
+  --red: #e92344;
+  --strong-bliss: linear-gradient(
+    to right,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  );
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -9,6 +21,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--black);
 }
 
 code {
