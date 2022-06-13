@@ -13,27 +13,29 @@ const page = [
 const Header = () => {
   return (
     <header className={sx.container}>
-      <a href='/' className={sx.logo} aria-label='Idan Abdillah homepage'>
-        <Logo />
-      </a>
-      <nav>
-        <ul className={sx.menu}>
-          {page.map(({ name, url }) => (
-            <li className={sx.menu_list} key={name}>
-              <a href={url}>{name}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-      <div className={sx.menu_right}>
-        <ButtonLink href=''>Merch</ButtonLink>
-        <div className={`ic-wrapper ${sx.ic_btn}`}>
-          <button className='ic-sm'>
-            <Moon />
-          </button>
-          <button className='ic-sm'>
-            <MenuRightAlt />
-          </button>
+      <div className={sx.menu_wrapper}>
+        <a href='/' className={sx.logo} aria-label='Idan Abdillah homepage'>
+          <Logo />
+        </a>
+        <nav>
+          <ul className={sx.menu_left}>
+            {page.map(({ name, url }) => (
+              <li className={sx.menu_left__list} key={name}>
+                <a href={url}>{name}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div className={sx.menu_right}>
+          <ButtonLink href=''>Merch</ButtonLink>
+          <div className={`ic-wrapper ${sx.ic_btn}`}>
+            <button className='ic-sm'>
+              <Moon />
+            </button>
+            <button className='ic-sm'>
+              <MenuRightAlt />
+            </button>
+          </div>
         </div>
       </div>
     </header>

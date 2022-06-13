@@ -52,3 +52,14 @@ li a {
 .ic-wrapper svg:hover {
   fill: var(--grey);
 }
+
+/* Large screens ----------- */
+@media (min-width: 1400px) {
+  body {
+    padding: 0 5%;
+  }
+
+  #indicator {
+    right: calc(5% + 40px);
+  }
+}

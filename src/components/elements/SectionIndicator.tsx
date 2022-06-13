@@ -40,7 +40,7 @@ const numberAc = {
 
 const SectionIndicator = () => {
   return (
-    <StyledSectionIndicator>
+    <StyledSectionIndicator id='indicator'>
       <div style={container}>
         <div style={line} />
         <div style={numberAc}>01</div>
