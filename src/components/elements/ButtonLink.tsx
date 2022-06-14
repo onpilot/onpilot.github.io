@@ -17,15 +17,20 @@ const StyledButton = styled.a`
   line-height: 1;
   text-align: center;
   text-decoration: none;
+  user-select: none;
   color: var(--black);
   border: 2px solid var(--black);
   border-radius: 9999px;
 
   &:hover {
     border: none;
-    background-color: var(--red);
-    background-image: var(--strong-bliss);
     color: white;
+    background-color: ${(props) =>
+      props.href ? 'var(--red)' : 'var(--black)'};
+    background-image: ${(props) =>
+      props.href ? 'var(--strong-bliss)' : 'var(--black)'};
+    cursor: ${(props) => !props.href && 'not-allowed'};
+    transition: 500ms;
 
     & svg {
       fill: currentColor;

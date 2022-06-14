@@ -16,6 +16,7 @@ export const [ic_1, ic_2, ic_3, ic_4, ic_5, ic_6] = [
   disc(),
 ];
 
+// TODO: Web design & development link
 export const portfolio = [
   {
     id: 1,

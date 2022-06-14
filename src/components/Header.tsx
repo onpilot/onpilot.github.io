@@ -10,6 +10,7 @@ const page = [
   { name: 'Portfolio', url: '/portfolio' },
 ];
 
+// TODO: 1) merch button link, 2) page url
 const Header = () => {
   return (
     <header className={sx.container}>
@@ -21,13 +22,13 @@ const Header = () => {
           <ul className={sx.menu_left}>
             {page.map(({ name, url }) => (
               <li className={sx.menu_left__list} key={name}>
-                <a href={url}>{name}</a>
+                <a style={{ cursor: 'not-allowed' }}>{name}</a>
               </li>
             ))}
           </ul>
         </nav>
         <div className={sx.menu_right}>
-          <ButtonLink href=''>Merch</ButtonLink>
+          <ButtonLink>Merch</ButtonLink>
           <div className={`ic-wrapper ${sx.ic_btn}`}>
             <button className='ic-sm'>
               <Moon />

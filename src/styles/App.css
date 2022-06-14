@@ -49,13 +49,16 @@ li a {
   height: 24px;
 }
 
+.ic-wrapper svg {
+  transition: 250ms;
+}
 .ic-wrapper svg:hover {
-  fill: var(--grey);
+  fill: var(--red);
 }
 
 /* toggle hidden */
 .hidden {
-  display: none !important;
+  visibility: hidden !important;
 }
 
 /* Large screens ----------- */

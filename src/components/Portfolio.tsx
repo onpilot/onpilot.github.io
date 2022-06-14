@@ -18,7 +18,7 @@ const Portfolio = () => {
     <section className={sx.container}>
       <div className={sx.spacer} />
       <h1>Portfolio</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <p>🦄 Some of my little works during my coding journey.</p>
       <div className={sx.ilustration}>
         <img src={ilustration} alt='Ilustration' />
       </div>
