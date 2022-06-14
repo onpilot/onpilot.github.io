@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
 import SectionIndicator from './components/elements/SectionIndicator';
+import Modal from './components/elements/Modal';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Portfolio />
       </main>
       <Footer />
+      <Modal />
     </div>
   );
 }

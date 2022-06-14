@@ -19,7 +19,7 @@
 }
 
 .logo svg:hover {
-  transform: scale(2);
+  fill: #555;
 }
 
 .menu_left {
